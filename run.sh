@@ -33,8 +33,8 @@ gs -dSAFER -dBATCH -dNOPAUSE \
 
 echo "Dithering and quantizing background..."
 convert ./temp/img_480x800.png \
-   -gaussian-blur 0x0.6 -sigmoidal-contrast 7x50% \
-   -ordered-dither o4x4 -remap ./base/LUT6.png \
+   -gaussian-blur 0x0.6 -sigmoidal-contrast 7x60% \
+   -ordered-dither o2x2 -remap ./base/LUT6.png \
    ./temp/bg_dither_6c.png
 
 echo "Merging into final image..."
